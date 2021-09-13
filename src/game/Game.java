@@ -40,8 +40,10 @@ public class Game {
                     if(i == 5);
                         System.out.print("Хотите ли Вы продолжить игру: 0 - если нет, 1 - если да\n");
                         int a = scanner.nextInt();
-                        if(a == 0)
+                        if(a == 0) {
                             Play = false;
+                            System.out.println("Загадано было число: "+number);                
+                        }        
                         else {
                             Play = true;
                             System.out.print("Программа задумала число от 0 до 9! Попробуй отгадать: ");
