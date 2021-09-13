@@ -25,7 +25,7 @@ public class Game {
         System.out.print("Программа задумала число от 0 до 9! Попробуй отгадать: ");
         //for(int i = 0; i < 5; i++) {
         int i = 0;
-        while(true) {
+        do {
             int userNumber = scanner.nextInt();
             if(userNumber == number) {
                 System.out.println("Ура! Ты выиграл!");
@@ -41,7 +41,7 @@ public class Game {
               
             }
             i++;
-        }
+        } while(true);
     }
 }
         
