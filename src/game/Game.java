@@ -34,6 +34,7 @@ public class Game {
                 if(i < attempt) {
                     System.out.println("Неправильно, попробуй еще! ");
             }   
+                
                 else {
                     System.out.println(":(, проиграл, задумано: "+number);
                 }
