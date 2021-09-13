@@ -36,14 +36,15 @@ public class Game {
             }   
                 
                 else {
-                    System.out.println(":(, проиграл, задумано: "+number);
+                    System.out.println(":(, проиграл! ");
                     if(i == 5);
-                    System.out.print("Хотите ли Вы продолжить игру: 0 - если нет, 1 - если да\n");
-                    int a = scanner.nextInt();
-                    if(userNumber == 0)
-                        break;
-                    else {
-                        Play = true;
+                        System.out.print("Хотите ли Вы продолжить игру: 0 - если нет, 1 - если да\n");
+                        int a = scanner.nextInt();
+                        if(a == 0)
+                            Play = false;
+                        else {
+                            Play = true;
+                            System.out.print("Программа задумала число от 0 до 9! Попробуй отгадать: ");
                     }
                     
                 }
