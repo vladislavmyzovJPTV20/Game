@@ -18,7 +18,7 @@ public class Game {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int attempt = 0;
+        int attempt = 4;
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
         int number = random.nextInt(10);
@@ -29,7 +29,7 @@ public class Game {
                 System.out.println("Ура! Ты выиграл!");
                 break;
             }else{
-                if(attempt < 4) {
+                if(i < attempt) {
                     System.out.println("Неправильно, попробуй еще! ");
             }   
                 else {
@@ -37,7 +37,6 @@ public class Game {
                 }
               
             }
-            attempt++;
         }
     }
-
+}
