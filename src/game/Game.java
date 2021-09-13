@@ -18,18 +18,20 @@ public class Game {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int attempt = 0;
+        int attempt = 4;
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
         int number = random.nextInt(10);
         System.out.print("Программа задумала число от 0 до 9! Попробуй отгадать: ");
-        for(int i = 0; i < 5; i++) {
+        //for(int i = 0; i < 5; i++) {
+        int i = 0;
+        while(true) {
             int userNumber = scanner.nextInt();
             if(userNumber == number) {
                 System.out.println("Ура! Ты выиграл!");
                 break;
             }else{
-                if(attempt < 4) {
+                if(i < attempt) {
                     System.out.println("Неправильно, попробуй еще! ");
             }   
                 else {
@@ -37,7 +39,8 @@ public class Game {
                 }
               
             }
-            attempt++;
+            i++;
         }
     }
+}
 
